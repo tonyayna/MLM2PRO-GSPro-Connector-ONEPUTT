@@ -1,7 +1,11 @@
-# MLM2PRO-GSPro-Connector
-GSPro connector for the MLM2Pro & Mevo+ Launch Monitors that includes Webcam or ExPutt putting.
+# MLM2PRO-GSPro-Connector-ONEPUTT
+GSPro connector for Multiple Launch Monitor (such as MLM2Pro, Garmin R10, Garmin R50, etc) and with Putting (Webcam Putt, Exputt and OnePutt)
 
 ## Support me:
+You may check the original code from: 
+https://github.com/springbok/MLM2PRO-GSPro-Connector
+Below is support link to support the original developer.
+
 Any support greatly appreciated and will help me to continue to develop this connector.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X3OXE0L)
@@ -12,70 +16,11 @@ If you are looking at a GSPro control box for your simulator, please consider my
 
 To find out more details you go to the online shop [here](https://cascadia3dpd.com/product/brain-box-golf-simulator-control-box-for-gspro/)
 
-## Announcements:
-
-### 7 February 24:
-
-**GSCloud Support**
-
-From V1.01.32 the connector now supports GSCloud. This means you can now use the connector with the GSCloud app.
-
-*Thanks to Paul McMahon for his work on this.*
-
-Go to https://golfsimcloud.com/, reserve a timeslot. 
-
-![Reserve timeslot](images/gscloud_order_page.png)
-
-And when that time comes, copy the IP settings from the second (player 2 / connector) area into the connector, replacing localhost/921 as shown.
-
-![Update IP address](images/gscloud_ip_settings.png)
-
-
-### 3 November 23: 
-
-**MEVO+ is now supported.**
-
-We are excited to announce support for the Mevo+ launch monitor has now been added to the connector.
-
-For more details see [here](https://github.com/springbok/MLM2PRO-GSPro-Connector/wiki/Mevo-)
-
-## Highlights:
-
-This connector was built from the ground up to be easy to use, reliable, accurate, and fast.
-
-1. User Friendly
-   - Windows application using a Graphical User Interface.
-   - All configuration is done via user friendly dialogs.
-   - Allows you to easily manage & select from multiple devices.
-   
-2. Performance:
-   - True Windows multithreading with all processes running in seperate threads.
-   - Direct use of Windows API which improves performance and reduces reliance on third party libraries.
-   - Efficient detection of new shots.
-   - Near instant response times.
-
-3. Maintainability:
-   - Uses Object-oriented programming techniques.
-   - Code seperated into easily maintainable classes.
-
-### Main Window
-![Main Window](images/mainwindow.png)
-
-### Devices
-![Devices](images/devices.png)
-
-### ROI's
-![ROI's](images/specify_rois.png)
-
-### Verify ROI's
-![Verify ROI's](images/verify_rois.png)
-
-### Putting
-![Putting](images/putting.png)
-
 ## Documentation
 
 * For a installation & setup video you can go [here](https://youtu.be/9mhtPu8xs0s)
+
+* Simple video to connect with OnePutt you can go [link provide soon]
 
 * For a video on how to setup the Exputt with the connector you can go [here](https://www.youtube.com/watch?v=dV0CH2Vy0Y0)
 
@@ -117,6 +62,7 @@ You can access Joe's YouTube channel [here](https://www.youtube.com/@JLagGOLF)
 
 ### Original Connector
 [rowenb](https://github.com/rowengb) for producing the first [connector](https://github.com/rowengb/GSPro-MLM2PRO-OCR-Connector).
+[springbok](https://github.com/springbok) for producing connector to various device [connector](https://github.com/springbok/MLM2PRO-GSPro-Connector).
 
 ### Other Contributors
 
@@ -126,6 +72,6 @@ You can access Joe's YouTube channel [here](https://www.youtube.com/@JLagGOLF)
 
 ## Latest Release
 
-The latest release can be downloaded from [here](https://github.com/springbok/MLM2PRO-GSPro-Connector/releases)
+The latest release can be downloaded from [link provide soon]
 
 
