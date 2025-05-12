@@ -72,6 +72,6 @@ You can access Joe's YouTube channel [here](https://www.youtube.com/@JLagGOLF)
 
 ## Latest Release
 
-The latest release can be downloaded from [link provide soon]
+The latest release can be downloaded from [here](https://github.com/tonyayna/MLM2PRO-GSPro-Connector-ONEPUTT/releases/tag/oneputt)
 
 
