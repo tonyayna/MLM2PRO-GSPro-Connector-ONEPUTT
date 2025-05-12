@@ -44,7 +44,7 @@ class PuttingForm(QWidget, Ui_PuttingForm):
         sources = []
         for i in range(8):
             sources.append(str(i))
-        self.putting_system_combo.addItems([PuttingSystems.NONE, PuttingSystems.EXPUTT, PuttingSystems.WEBCAM])
+        self.putting_system_combo.addItems([PuttingSystems.NONE, PuttingSystems.EXPUTT, PuttingSystems.WEBCAM, PuttingSystems.ONEPUTT])
         self.webcam_camera_combo.addItems(sources)
         #self.exputt_capture_card_combo.addItems(sources)
         self.webcam_auto_start_combo.addItems(['Yes', 'No'])

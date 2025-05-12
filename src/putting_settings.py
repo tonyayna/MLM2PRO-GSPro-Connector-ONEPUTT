@@ -6,6 +6,7 @@ from src.settings_base import SettingsBase
 class PuttingSystems:
     EXPUTT = 'ExPutt'
     WEBCAM = 'Webcam'
+    ONEPUTT = 'OnePutt'
     NONE = 'None'
 
 @dataclass
@@ -51,7 +52,8 @@ class PuttingSettings(SettingsBase):
                     },
                     "auto_start": "Yes",
                     "rois": {}
-                }
+                },
+                'oneputt': None,
             }
         )
 

@@ -12,6 +12,7 @@ from src.settings import LaunchMonitor
 class PuttType:
     WEBCAM = 'webcam'
     EXPUTT = 'exputt'
+    ONEPUTT = 'OnePutt'
 
 
 @dataclass

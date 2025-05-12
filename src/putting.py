@@ -1,3 +1,4 @@
+from src.device_putting_bluetooth_oneputt import DevicePuttingBluetoothOnePutt
 from src.device_putting_exputt import DevicePuttingExPutt
 from src.device_putting_webcam import DevicePuttingWebcam
 from src.putting_settings import PuttingSystems
@@ -15,6 +16,8 @@ class Putting:
             self.putting_device = DevicePuttingWebcam(self.main_window)
         elif self.main_window.putting_settings.system == PuttingSystems.EXPUTT:
             self.putting_device = DevicePuttingExPutt(self.main_window)
+        elif self.main_window.putting_settings.system == PuttingSystems.ONEPUTT:
+            self.putting_device = DevicePuttingBluetoothOnePutt(self.main_window)
         else:
             self.putting_device = None
         self.__display_putting_system()
@@ -31,7 +34,11 @@ class Putting:
             else:
                 self.putting_device.start_app()
                 self.putting_device.start()
-            self.putting_device.device_worker.club_selected(self.main_window.gspro_connection.current_club)
+
+            if self.putting_device.device_worker:
+                self.putting_device.device_worker.club_selected(self.main_window.gspro_connection.current_club)
+            elif self.putting_device.device:
+                self.putting_device.device.club_selected(self.main_window.gspro_connection.current_club)
 
     def __putting_started(self):
         self.main_window.putting_server_button.setText('Stop')
@@ -66,7 +73,10 @@ class Putting:
     def __display_putting_system(self):
         self.main_window.putting_system_label.setText(self.main_window.putting_settings.system)
         self.main_window.putting_server_button.setText('Start')
-        self.main_window.putting_server_status_label.setText('Not Running')
+        if self.main_window.putting_settings.system == PuttingSystems.ONEPUTT:
+            self.main_window.putting_server_status_label.setText('Not Connected')
+        else:
+            self.main_window.putting_server_status_label.setText('Not Running')
         self.main_window.putting_server_status_label.setStyleSheet(
             f"QLabel {{ background-color : red; color : white; }}")
         if self.main_window.putting_settings.system == PuttingSystems.NONE:
